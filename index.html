@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width,initial-scale=1.0">
+    <title></title>
+    <style>
+        body,
+        html {
+            box-sizing: border-box;
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            margin: 0;
+            padding: 1em 1em 2em;
+            color: #fff;
+            background: #c00;
+            letter-spacing: 0.01em;
+            font: 1.5em/1.3 Georgia,serif;
+        }
+
+        a {
+            color: #fff;
+            background: transparent;
+            text-decoration: none;
+            border-bottom: 1px solid #f66;
+        }
+
+        a:hover {
+            border-bottom-color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<a href="//eric.bednarz.bike">eric.bednarz.bike</a>
+
+<script>
+    window.location.replace(document.getElementsByTagName('A')[0].getAttribute('href'));
+</script>
+
+</body>
+</html>
